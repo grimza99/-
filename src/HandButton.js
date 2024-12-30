@@ -5,7 +5,7 @@ function HandButton({ value, onClick }) {
   return (
     <>
       <button onClick={handleClick}>
-        <HandIcon prop={value}></HandIcon>
+        <HandIcon value={value}></HandIcon>
       </button>
     </>
   );
