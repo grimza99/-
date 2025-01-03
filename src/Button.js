@@ -1,4 +1,6 @@
-function Button({ children, onClick }) {
-  return <button onClick={onClick}>{children}</button>;
+import "./style/Button.css";
+
+function Button({ onClick }) {
+  return <button className="App-reset" onClick={onClick}></button>;
 }
 export default Button;

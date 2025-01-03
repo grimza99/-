@@ -8,9 +8,9 @@ const IMAGES = {
   scissor: scissorImg,
 };
 
-function HandIcon({ value = "rock" }) {
+function HandIcon({ value = "rock", className = "" }) {
   const src = IMAGES[value];
-  return <img src={src} alt={value}></img>;
+  return <img className={className} src={src} alt={value}></img>;
 }
 
 export default HandIcon;
