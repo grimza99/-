@@ -12,6 +12,7 @@ function getResult(me, other) {
   if (comparison < 0) return "패배";
   return "무승부 ";
 }
+
 function App() {
   const [hand, setHand] = useState(INITIAL_VALUE);
   const [otherHand, setOtherHand] = useState(INITIAL_VALUE);
@@ -32,8 +33,8 @@ function App() {
   };
 
   const handleClearClick = () => {
-    setHand("INITIAL_VALUE");
-    setOtherHand("INITIAL_VALUE");
+    setHand(INITIAL_VALUE);
+    setOtherHand(INITIAL_VALUE);
     setGameHistory([]);
     setScore(0);
     setOtherScore(0);
